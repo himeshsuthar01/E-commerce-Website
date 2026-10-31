@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Account | MAISON AUREA</title>
+
+
+    <!-- GOOGLE FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- BOOTSTRAP 5.3.3 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement">
+        COMPLIMENTARY SHIPPING ON ORDERS OVER ₹7,500
+    </div>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg main-nav">
+
+        <div class="container-fluid px-lg-5">
+
+            <!-- BRAND LOGO -->
+            <a class="navbar-brand" href="index.html">
+
+                MAISON <span>AUREA</span>
+
+                <small>CONSIDERED LUXURY</small>
+
+            </a>
+
+
+            <!-- MOBILE NAVBAR TOGGLER -->
+            <button
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+                aria-label="Toggle navigation"
+            >
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- NAVBAR MENU -->
+            <div class="collapse navbar-collapse" id="navMenu">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="index.html">
+                            HOME
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="collection.html">
+                            COLLECTION
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="index.html#story">
+                            OUR STORY
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="index.html#journal">
+                            JOURNAL
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- NAVBAR ACTIONS -->
+                <div class="nav-actions">
+
+                    <a href="collection.html">
+                        SEARCH
+                    </a>
+
+                    <a class="active" href="account.html">
+                        ACCOUNT
+                    </a>
+
+                    <a href="bag.html">
+                        BAG (<span class="bag-count">0</span>)
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ACCOUNT MAIN LAYOUT -->
+    <main class="account-layout">
+
+        <!-- LEFT SIDE: EDITORIAL IMAGE -->
+        <div class="account-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=85"
+                alt="MAISON AUREA editorial"
+            >
+
+        </div>
+
+
+        <!-- RIGHT SIDE: ACCOUNT PANEL -->
+        <div class="account-panel">
+
+            <p class="eyebrow">
+                WELCOME TO THE MAISON
+            </p>
+
+            <h1>Good to see you.</h1>
+
+            <p class="muted">
+                Sign in to keep your considered pieces close.
+            </p>
+
+
+            <!-- SIGN IN FORM -->
+            <form
+                id="accountForm"
+                class="checkout-form mt-4"
+            >
+
+                <!-- EMAIL ADDRESS -->
+                <label>
+
+                    Email address
+
+                    <input
+                        type="email"
+                        required
+                        placeholder="Your email address"
+                    >
+
+                </label>
+
+
+                <!-- PASSWORD -->
+                <label>
+
+                    Password
+
+                    <input
+                        type="password"
+                        required
+                        minlength="6"
+                        placeholder="Your password"
+                    >
+
+                </label>
+
+
+                <!-- SIGN IN BUTTON -->
+                <button
+                    class="btn-aurea w-100 justify-content-between mt-3"
+                    type="submit"
+                >
+
+                    SIGN IN
+
+                    <span>↗</span>
+
+                </button>
+
+
+                <!-- ACCOUNT MESSAGE -->
+                <p
+                    id="accountMessage"
+                    class="form-message mt-3"
+                ></p>
+
+            </form>
+
+
+            <!-- CREATE ACCOUNT LINK -->
+            <p class="muted small mt-4">
+
+                New to MAISON AUREA?
+
+                <a
+                    href="#"
+                    id="createAccount"
+                    class="wine-link"
+                >
+                    Create an account
+                </a>
+
+            </p>
+
+
+            <!-- DEMO INFORMATION -->
+            <small class="muted">
+
+                This is a frontend demo. Account data is not stored or sent.
+
+            </small>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <div id="siteFooter"></div>
+
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- CUSTOM JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Form Coat | MAISON AUREA</title>
+
+
+    <!-- GOOGLE FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- BOOTSTRAP 5.3.3 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement">
+        COMPLIMENTARY SHIPPING ON ORDERS OVER ₹7,500
+    </div>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg main-nav">
+
+        <div class="container-fluid px-lg-5">
+
+            <!-- BRAND LOGO -->
+            <a class="navbar-brand" href="index.html">
+
+                MAISON <span>AUREA</span>
+
+                <small>CONSIDERED LUXURY</small>
+
+            </a>
+
+
+            <!-- MOBILE NAVBAR TOGGLER -->
+            <button
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+                aria-label="Toggle navigation"
+            >
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- NAVBAR MENU -->
+            <div class="collapse navbar-collapse" id="navMenu">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="index.html">
+                            HOME
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active" href="collection.html">
+                            COLLECTION
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="index.html#story">
+                            OUR STORY
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="index.html#journal">
+                            JOURNAL
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- NAVBAR ACTIONS -->
+                <div class="nav-actions">
+
+                    <a href="collection.html">
+                        SEARCH
+                    </a>
+
+                    <a href="account.html">
+                        ACCOUNT
+                    </a>
+
+                    <a href="bag.html">
+                        BAG (<span class="bag-count">0</span>)
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- PRODUCT MAIN SECTION -->
+    <main class="page-main">
+
+        <!-- BREADCRUMB NAVIGATION -->
+        <p class="breadcrumb">
+
+            <a href="index.html">HOME</a>
+
+            /
+
+            <a href="collection.html">COLLECTION</a>
+
+            /
+
+            THE FORM COAT
+
+        </p>
+
+
+        <!-- PRODUCT DETAIL ROW -->
+        <div class="row g-5 product-detail">
+
+            <!-- LEFT SIDE: PRODUCT GALLERY -->
+            <div class="col-lg-7">
+
+                <div class="product-gallery">
+
+                    <!-- MAIN PRODUCT IMAGE -->
+                    <img
+                        src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=1100&q=85"
+                        alt="The Form Coat"
+                    >
+
+                    <!-- SECOND PRODUCT IMAGE -->
+                    <img
+                        src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85"
+                        alt="Coat editorial detail"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE: PRODUCT INFORMATION -->
+            <div class="col-lg-5 product-info">
+
+                <p class="eyebrow">
+                    MAISON ESSENTIALS / 001
+                </p>
+
+                <h1>The Form Coat</h1>
+
+                <p class="product-price">
+                    ₹12,900
+                </p>
+
+                <p class="muted">
+                    Soft camel · Wool blend
+                </p>
+
+
+                <!-- PRODUCT DESCRIPTION -->
+                <p class="detail-description">
+
+                    A refined outer layer with a relaxed silhouette.
+                    Thoughtfully tailored to move effortlessly through the seasons.
+
+                </p>
+
+                <hr>
+
+
+                <!-- SIZE SELECTION -->
+                <p class="field-label">
+                    SELECT SIZE
+                </p>
+
+                <div class="size-options">
+
+                    <button class="size-btn">
+                        XS
+                    </button>
+
+                    <button class="size-btn active">
+                        S
+                    </button>
+
+                    <button class="size-btn">
+                        M
+                    </button>
+
+                    <button class="size-btn">
+                        L
+                    </button>
+
+                    <button class="size-btn">
+                        XL
+                    </button>
+
+                </div>
+
+
+                <!-- COLOUR SELECTION -->
+                <p class="field-label mt-4">
+                    COLOUR: SOFT CAMEL
+                </p>
+
+                <button
+                    class="swatch"
+                    aria-label="Soft camel colour"
+                ></button>
+
+
+                <!-- ADD TO BAG BUTTON -->
+                <button
+                    class="btn-aurea w-100 justify-content-between mt-4"
+                    id="detailAdd"
+                >
+
+                    ADD TO BAG
+
+                    <span>₹12,900　＋</span>
+
+                </button>
+
+
+                <!-- DELIVERY INFORMATION -->
+                <p class="muted small mt-3">
+
+                    Complimentary delivery on orders over ₹7,500.
+
+                </p>
+
+
+                <!-- PRODUCT ACCORDION -->
+                <div class="accordion mt-4" id="productAccordion">
+
+
+                    <!-- PRODUCT DETAILS -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <button
+                                class="accordion-button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#details"
+                            >
+
+                                PRODUCT DETAILS
+
+                            </button>
+
+                        </h2>
+
+
+                        <div
+                            id="details"
+                            class="accordion-collapse collapse show"
+                            data-bs-parent="#productAccordion"
+                        >
+
+                            <div class="accordion-body">
+
+                                Wool blend outer · Relaxed fit · Fully lined · Dry clean only.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DELIVERY AND RETURNS -->
+                    <div class="accordion-item">
+
+                        <h2 class="accordion-header">
+
+                            <button
+                                class="accordion-button collapsed"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#delivery"
+                            >
+
+                                DELIVERY & RETURNS
+
+                            </button>
+
+                        </h2>
+
+
+                        <div
+                            id="delivery"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#productAccordion"
+                        >
+
+                            <div class="accordion-body">
+
+                                Orders are usually dispatched within 2–4 business days.
+                                Returns accepted within 7 days of delivery.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <div id="siteFooter"></div>
+
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- CUSTOM JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

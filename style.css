@@ -1,0 +1,1435 @@
+
+/* ========================================
+   MAISON AUREA - LUXURY FASHION WEBSITE
+   MAIN STYLESHEET
+======================================== */
+
+
+/* ========================================
+   1. ROOT VARIABLES
+======================================== */
+
+:root {
+
+    --paper: #f7f4ef;
+    --sand: #eee8df;
+    --ink: #292622;
+    --muted: #827b72;
+    --wine: #762b3b;
+    --line: #ddd5ca;
+
+    --serif: "Playfair Display", Georgia, serif;
+    --sans: "DM Sans", Arial, sans-serif;
+
+}
+
+
+/* ========================================
+   2. GENERAL STYLING
+======================================== */
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 13px var(--sans);
+
+}
+
+a {
+
+    color: inherit;
+    text-decoration: none;
+
+}
+
+
+/* ========================================
+   3. ANNOUNCEMENT BAR
+======================================== */
+
+.announcement {
+
+    background: var(--ink);
+    color: #f8f3ec;
+    text-align: center;
+    padding: 9px;
+    font-size: 9px;
+    letter-spacing: 1.8px;
+
+}
+
+
+/* ========================================
+   4. NAVBAR
+======================================== */
+
+.main-nav {
+
+    min-height: 82px;
+    background: rgba(247, 244, 239, 0.98);
+    border-bottom: 1px solid var(--line);
+    z-index: 5;
+
+}
+
+.navbar-brand {
+
+    font: 19px/1 var(--serif);
+    letter-spacing: 2px;
+
+}
+
+.navbar-brand span,
+.wine-dot {
+
+    color: var(--wine);
+
+}
+
+.navbar-brand small {
+
+    display: block;
+    text-align: center;
+    font: 7px var(--sans);
+    letter-spacing: 2.5px;
+    margin-top: 7px;
+    color: var(--muted);
+
+}
+
+.navbar-nav {
+
+    gap: 25px;
+
+}
+
+.nav-link,
+.nav-actions a {
+
+    font-size: 9px;
+    letter-spacing: 1.3px;
+
+}
+
+.nav-link.active,
+.nav-link:hover,
+.nav-actions a:hover {
+
+    color: var(--wine);
+
+}
+
+.nav-actions {
+
+    display: flex;
+    gap: 20px;
+
+}
+
+.navbar-toggler {
+
+    border: 0;
+    box-shadow: none !important;
+
+}
+
+
+/* ========================================
+   5. HERO SECTION
+======================================== */
+
+.hero {
+
+    display: grid;
+    grid-template-columns: 42% 58%;
+    padding: 25px 5%;
+    gap: 3%;
+    min-height: 610px;
+
+}
+
+.hero-copy {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 7%;
+    position: relative;
+
+}
+
+.hero h1,
+.page-heading h1 {
+
+    font: clamp(55px, 6.5vw, 88px) / 0.98 var(--serif);
+    letter-spacing: -2px;
+    margin: 0 0 24px;
+
+}
+
+.hero-copy > p:not(.eyebrow) {
+
+    max-width: 320px;
+    line-height: 1.9;
+    color: var(--muted);
+    margin-bottom: 28px;
+
+}
+
+.btn-aurea {
+
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    background: var(--wine);
+    color: white;
+
+    border: 0;
+    padding: 15px 18px;
+
+    font-size: 9px;
+    letter-spacing: 1px;
+
+    transition: 0.25s;
+
+}
+
+.btn-aurea:hover {
+
+    background: var(--ink);
+    color: white;
+    transform: translateY(-2px);
+
+}
+
+.hero-number {
+
+    position: absolute;
+    bottom: 10px;
+    left: 7%;
+    font-size: 9px;
+    letter-spacing: 2px;
+
+}
+
+.hero-number i {
+
+    color: #b5aa9d;
+    margin: 0 8px;
+
+}
+
+.hero-photo {
+
+    min-height: 540px;
+    background: var(--sand);
+
+}
+
+.hero-photo img {
+
+    width: 100%;
+    height: 100%;
+    min-height: 540px;
+    object-fit: cover;
+
+}
+
+
+/* ========================================
+   6. COMMON SECTION STYLING
+======================================== */
+
+.section-wrap {
+
+    padding: 95px 6%;
+
+}
+
+.section-title {
+
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+}
+
+.section-title h2,
+.newsletter h2 {
+
+    font: clamp(32px, 4vw, 48px) var(--serif);
+    margin: 0;
+
+}
+
+.section-title .eyebrow {
+
+    margin-bottom: 10px;
+
+}
+
+.eyebrow {
+
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: var(--wine);
+    margin: 0 0 18px;
+
+}
+
+.under-link {
+
+    font-size: 9px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--wine);
+    padding-bottom: 8px;
+
+}
+
+
+/* ========================================
+   7. CATEGORY SECTION
+======================================== */
+
+.category-grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+
+}
+
+.category img {
+
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s;
+
+}
+
+.category:hover img {
+
+    transform: scale(0.985);
+
+}
+
+.category small {
+
+    display: block;
+    color: var(--wine);
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    margin-top: 16px;
+
+}
+
+.category h3 {
+
+    font: 24px var(--serif);
+    margin: 5px 0;
+
+}
+
+
+/* ========================================
+   8. EDITORIAL / OUR STORY SECTION
+======================================== */
+
+.editorial {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--sand);
+
+}
+
+.editorial-photo {
+
+    height: 510px;
+
+}
+
+.editorial-photo img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.editorial-copy {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 65px 13%;
+
+}
+
+.editorial-copy h2 {
+
+    font: clamp(48px, 5vw, 68px) / 1.02 var(--serif);
+    margin: 0 0 20px;
+
+}
+
+.editorial-copy > p:not(.eyebrow) {
+
+    color: var(--muted);
+    line-height: 2;
+    max-width: 370px;
+    margin-bottom: 25px;
+
+}
+
+
+/* ========================================
+   9. QUOTE SECTION
+======================================== */
+
+.quote {
+
+    background: var(--wine);
+    color: #f8f3ec;
+    text-align: center;
+    padding: 75px 20px;
+
+}
+
+.quote .eyebrow {
+
+    color: #e2c5c8;
+
+}
+
+.quote h2 {
+
+    font: clamp(32px, 4.5vw, 54px) / 1.2 var(--serif);
+    margin: 0 0 22px;
+
+}
+
+.quote small {
+
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: #e2c5c8;
+
+}
+
+
+/* ========================================
+   10. NEWSLETTER SECTION
+======================================== */
+
+.newsletter {
+
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.newsletter h2 {
+
+    font-size: 38px;
+
+}
+
+.newsletter p:not(.eyebrow) {
+
+    color: var(--muted);
+    margin: 10px 0 0;
+
+}
+
+.newsletter-form {
+
+    width: min(440px, 48%);
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    border-bottom: 1px solid var(--ink);
+
+}
+
+.newsletter-form input {
+
+    border: 0;
+    background: transparent;
+    outline: 0;
+    padding: 13px 4px;
+    font: 11px var(--sans);
+
+}
+
+.newsletter-form button {
+
+    border: 0;
+    background: transparent;
+    color: var(--wine);
+    font-size: 9px;
+    letter-spacing: 1px;
+
+}
+
+.newsletter-form small {
+
+    grid-column: 1 / -1;
+    color: var(--muted);
+    font-size: 8px;
+    padding: 8px 0;
+
+}
+
+
+/* ========================================
+   11. FOOTER SECTION
+======================================== */
+
+.site-footer {
+
+    background: #24211e;
+    color: #f4eee6;
+
+    padding: 50px 6% 18px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+
+}
+
+.footer-brand > a {
+
+    font: 19px var(--serif);
+    letter-spacing: 2px;
+
+}
+
+.footer-brand p {
+
+    color: #b7aea3;
+    line-height: 1.9;
+    font-size: 10px;
+    margin-top: 14px;
+
+}
+
+.footer-column {
+
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+}
+
+.footer-column h4 {
+
+    color: #c9b9ad;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+
+}
+
+.footer-column a {
+
+    font-size: 10px;
+    color: #d4cdc4;
+
+}
+
+.footer-bottom {
+
+    grid-column: 1 / -1;
+
+    border-top: 1px solid #48423d;
+    margin-top: 25px;
+    padding-top: 17px;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #9f978f;
+    font-size: 7px;
+    letter-spacing: 1px;
+
+}
+
+
+/* ========================================
+   12. COMMON PAGE LAYOUT
+======================================== */
+
+.page-main {
+
+    padding: 55px 7% 100px;
+    min-height: 65vh;
+
+}
+
+.page-heading {
+
+    text-align: center;
+    padding: 30px 0 48px;
+
+}
+
+.page-heading h1 {
+
+    font-size: clamp(42px, 5vw, 65px);
+    margin-bottom: 13px;
+
+}
+
+.page-heading > p:last-child {
+
+    color: var(--muted);
+
+}
+
+
+/* ========================================
+   13. COLLECTION PAGE
+======================================== */
+
+.collection-toolbar {
+
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+
+    padding: 13px 0;
+    margin-bottom: 25px;
+
+    font-size: 9px;
+    letter-spacing: 1px;
+
+}
+
+.collection-toolbar select {
+
+    border: 0;
+    background: transparent;
+    font: inherit;
+    margin-left: 12px;
+    outline: 0;
+
+}
+
+
+/* ========================================
+   14. PRODUCT CARDS
+======================================== */
+
+.product-card {
+
+    height: 100%;
+
+}
+
+.product-image {
+
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+    background: var(--sand);
+
+}
+
+.product-image img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+
+}
+
+.product-card:hover .product-image img {
+
+    transform: scale(1.04);
+
+}
+
+.product-tag {
+
+    position: absolute;
+    z-index: 1;
+    top: 12px;
+    left: 12px;
+
+    background: var(--paper);
+    color: var(--wine);
+
+    font-size: 7px;
+    letter-spacing: 1px;
+    padding: 7px;
+
+}
+
+.product-meta {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+    padding: 13px 0 9px;
+
+}
+
+.product-meta h3 {
+
+    font: 17px var(--serif);
+    margin: 0 0 4px;
+
+}
+
+.product-meta p {
+
+    font-size: 9px;
+    color: var(--muted);
+    margin: 0;
+
+}
+
+.product-meta strong {
+
+    font-size: 10px;
+    font-weight: 500;
+    white-space: nowrap;
+
+}
+
+.add-button {
+
+    width: 100%;
+
+    background: transparent;
+    border: 0;
+
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+
+    padding: 10px 0;
+    text-align: left;
+
+    font-size: 8px;
+    letter-spacing: 1px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.add-button span {
+
+    color: var(--wine);
+    font-size: 14px;
+
+}
+
+
+/* ========================================
+   15. PRODUCT DETAIL PAGE
+======================================== */
+
+.breadcrumb {
+
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: var(--muted);
+    margin-bottom: 28px;
+
+}
+
+.product-gallery {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+
+}
+
+.product-gallery img {
+
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+
+}
+
+.product-info {
+
+    padding: 20px 5%;
+
+}
+
+.product-info h1,
+.account-panel h1 {
+
+    font: clamp(38px, 4vw, 55px) var(--serif);
+    margin: 0 0 12px;
+
+}
+
+.product-price {
+
+    font-size: 15px;
+
+}
+
+.muted {
+
+    color: var(--muted);
+
+}
+
+.detail-description {
+
+    line-height: 1.9;
+    color: #686158;
+    margin: 24px 0;
+
+}
+
+.field-label {
+
+    font-size: 9px;
+    letter-spacing: 1.3px;
+
+}
+
+.size-options {
+
+    display: flex;
+    gap: 9px;
+
+}
+
+.size-btn {
+
+    width: 42px;
+    height: 40px;
+
+    border: 1px solid var(--line);
+    background: transparent;
+
+    font-size: 10px;
+
+}
+
+.size-btn.active,
+.size-btn:hover {
+
+    border-color: var(--wine);
+    color: var(--wine);
+
+}
+
+.swatch {
+
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+    border: 2px solid var(--paper);
+
+    outline: 1px solid var(--wine);
+    background: #b7a18a;
+
+}
+
+
+/* ========================================
+   16. PRODUCT ACCORDION
+======================================== */
+
+.accordion-item,
+.accordion-button {
+
+    background: transparent !important;
+    border-color: var(--line) !important;
+
+}
+
+.accordion-button {
+
+    font-size: 9px;
+    letter-spacing: 1px;
+    box-shadow: none !important;
+
+}
+
+.accordion-body {
+
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.8;
+
+}
+
+
+/* ========================================
+   17. SHOPPING BAG PAGE
+======================================== */
+
+.bag-items {
+
+    border-top: 1px solid var(--line);
+
+}
+
+.bag-row {
+
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    gap: 18px;
+    align-items: center;
+
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+
+}
+
+.bag-row img {
+
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+
+}
+
+.bag-row h3 {
+
+    font: 20px var(--serif);
+    margin: 0 0 5px;
+
+}
+
+.bag-row p {
+
+    font-size: 10px;
+    color: var(--muted);
+    margin: 0 0 8px;
+
+}
+
+.remove-item {
+
+    border: 0;
+    background: transparent;
+    color: var(--wine);
+    font-size: 9px;
+    text-decoration: underline;
+
+}
+
+
+/* ========================================
+   18. ORDER SUMMARY
+======================================== */
+
+.summary-box {
+
+    background: #eee8df;
+    padding: 28px;
+    position: sticky;
+    top: 20px;
+
+}
+
+.summary-box .eyebrow {
+
+    margin-bottom: 22px;
+
+}
+
+.summary-line {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 15px 0;
+    font-size: 11px;
+
+}
+
+.summary-line strong {
+
+    font-weight: 500;
+
+}
+
+.summary-line.total {
+
+    font-size: 14px;
+
+}
+
+.summary-box > small {
+
+    display: block;
+    color: var(--muted);
+    font-size: 9px;
+    margin-top: 14px;
+
+}
+
+.empty-bag {
+
+    text-align: center;
+    padding: 55px 20px;
+    color: var(--muted);
+
+}
+
+
+/* ========================================
+   19. CHECKOUT PAGE
+======================================== */
+
+.checkout-main {
+
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.checkout-form h2 {
+
+    font: 25px var(--serif);
+    margin: 25px 0 18px;
+
+}
+
+.checkout-form label {
+
+    display: block;
+    font-size: 10px;
+    color: #5f5951;
+    margin-bottom: 15px;
+
+}
+
+.checkout-form input:not([type="radio"]) {
+
+    display: block;
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid var(--line);
+    background: transparent;
+
+    margin-top: 7px;
+
+    font: 11px var(--sans);
+
+    outline-color: var(--wine);
+
+}
+
+.payment-option {
+
+    padding: 14px;
+    border: 1px solid var(--line);
+    width: 100%;
+
+}
+
+.form-message {
+
+    font-size: 10px;
+    color: var(--wine);
+
+}
+
+.checkout-item {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid var(--line);
+
+    font-size: 10px;
+
+}
+
+
+/* ========================================
+   20. ACCOUNT PAGE
+======================================== */
+
+.account-layout {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 650px;
+
+}
+
+.account-image img {
+
+    width: 100%;
+    height: 100%;
+    min-height: 650px;
+    object-fit: cover;
+
+}
+
+.account-panel {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 14%;
+
+}
+
+.account-panel h1 {
+
+    font-size: 45px;
+
+}
+
+.wine-link {
+
+    color: var(--wine);
+    text-decoration: underline;
+
+}
+
+
+/* ========================================
+   21. TABLET RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+
+        gap: 10px;
+        padding: 12px 0;
+
+    }
+
+    .nav-actions {
+
+        padding: 0 0 12px;
+
+    }
+
+    .hero {
+
+        min-height: 480px;
+
+    }
+
+    .hero-photo,
+    .hero-photo img {
+
+        min-height: 460px;
+
+    }
+
+    .category img {
+
+        height: 290px;
+
+    }
+
+    .product-image {
+
+        height: 280px;
+
+    }
+
+    .product-gallery img {
+
+        height: 430px;
+
+    }
+
+}
+
+
+/* ========================================
+   22. MOBILE RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 767px) {
+
+    /* HERO SECTION */
+
+    .hero {
+
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 15px;
+        gap: 0;
+
+    }
+
+    .hero-photo,
+    .hero-photo img {
+
+        height: 400px;
+        min-height: 400px;
+
+    }
+
+    .hero-copy {
+
+        padding: 38px 12px 50px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 61px;
+
+    }
+
+    .hero-number {
+
+        left: 12px;
+
+    }
+
+
+    /* COMMON SECTIONS */
+
+    .section-wrap {
+
+        padding: 65px 18px;
+
+    }
+
+    .section-title {
+
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 17px;
+
+    }
+
+
+    /* CATEGORY SECTION */
+
+    .category-grid {
+
+        grid-template-columns: 1fr 1fr;
+        gap: 22px 12px;
+
+    }
+
+    .category:last-child {
+
+        display: none;
+
+    }
+
+    .category img {
+
+        height: 245px;
+
+    }
+
+    .category h3 {
+
+        font-size: 20px;
+
+    }
+
+
+    /* EDITORIAL SECTION */
+
+    .editorial {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .editorial-photo {
+
+        height: 380px;
+
+    }
+
+    .editorial-copy {
+
+        padding: 50px 28px 60px;
+
+    }
+
+
+    /* NEWSLETTER SECTION */
+
+    .newsletter {
+
+        padding: 60px 22px;
+        align-items: flex-start;
+        flex-direction: column;
+
+    }
+
+    .newsletter-form {
+
+        width: 100%;
+
+    }
+
+
+    /* FOOTER SECTION */
+
+    .site-footer {
+
+        grid-template-columns: 1fr 1fr;
+        padding: 42px 22px 18px;
+        gap: 25px 18px;
+
+    }
+
+    .footer-brand {
+
+        grid-column: 1 / -1;
+
+    }
+
+    .footer-bottom {
+
+        flex-direction: column;
+        gap: 12px;
+
+    }
+
+
+    /* PAGE LAYOUT */
+
+    .page-main {
+
+        padding: 35px 18px 70px;
+
+    }
+
+
+    /* PRODUCT SECTION */
+
+    .product-image {
+
+        height: 245px;
+
+    }
+
+    .product-meta {
+
+        flex-direction: column;
+
+    }
+
+    .product-gallery img {
+
+        height: 300px;
+
+    }
+
+    .product-info {
+
+        padding: 15px 0;
+
+    }
+
+
+    /* ACCOUNT SECTION */
+
+    .account-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .account-image {
+
+        height: 320px;
+
+    }
+
+    .account-image img {
+
+        min-height: 320px;
+        height: 320px;
+
+    }
+
+    .account-panel {
+
+        padding: 48px 25px;
+
+    }
+
+
+    /* ORDER SUMMARY */
+
+    .summary-box {
+
+        position: static;
+
+    }
+
+}
+
+
+/* ========================================
+   23. SMALL MOBILE RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 390px) {
+
+    .product-image {
+
+        height: 205px;
+
+    }
+
+    .category img {
+
+        height: 210px;
+
+    }
+
+    .product-meta h3 {
+
+        font-size: 15px;
+
+    }
+
+}

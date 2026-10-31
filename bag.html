@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Bag | MAISON AUREA</title>
+
+
+    <!-- GOOGLE FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- BOOTSTRAP 5.3.3 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement">
+        COMPLIMENTARY SHIPPING ON ORDERS OVER ₹7,500
+    </div>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg main-nav">
+
+        <div class="container-fluid px-lg-5">
+
+            <!-- BRAND LOGO -->
+            <a class="navbar-brand" href="index.html">
+
+                MAISON <span>AUREA</span>
+
+                <small>CONSIDERED LUXURY</small>
+
+            </a>
+
+
+            <!-- MOBILE NAVBAR TOGGLER -->
+            <button
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+                aria-label="Toggle navigation"
+            >
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- NAVBAR MENU -->
+            <div class="collapse navbar-collapse" id="navMenu">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            HOME
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="collection.html">
+                            COLLECTION
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#story">
+                            OUR STORY
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#journal">
+                            JOURNAL
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- NAVBAR ACTIONS -->
+                <div class="nav-actions">
+
+                    <a href="collection.html">
+                        SEARCH
+                    </a>
+
+                    <a href="account.html">
+                        ACCOUNT
+                    </a>
+
+                    <a class="active" href="bag.html">
+                        BAG (<span class="bag-count">0</span>)
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- MAIN BAG SECTION -->
+    <main class="page-main">
+
+        <!-- PAGE HEADING -->
+        <div class="page-heading">
+
+            <p class="eyebrow">YOUR SELECTION</p>
+
+            <h1>
+                Your bag<span class="wine-dot">.</span>
+            </h1>
+
+            <p>A few good things, thoughtfully chosen.</p>
+
+        </div>
+
+
+        <!-- BAG CONTENT -->
+        <div class="row g-5">
+
+            <!-- LEFT SIDE: BAG ITEMS -->
+            <div class="col-lg-8">
+
+                <div id="bagItems" class="bag-items"></div>
+
+
+                <!-- CONTINUE SHOPPING LINK -->
+                <a
+                    href="collection.html"
+                    class="under-link d-inline-block mt-4"
+                >
+
+                    ← CONTINUE SHOPPING
+
+                </a>
+
+            </div>
+
+
+            <!-- RIGHT SIDE: ORDER SUMMARY -->
+            <div class="col-lg-4">
+
+                <aside class="summary-box">
+
+                    <p class="eyebrow">ORDER SUMMARY</p>
+
+
+                    <!-- SUBTOTAL -->
+                    <div class="summary-line">
+
+                        <span>Subtotal</span>
+
+                        <strong id="bagSubtotal">₹0</strong>
+
+                    </div>
+
+
+                    <!-- SHIPPING -->
+                    <div class="summary-line">
+
+                        <span>Shipping</span>
+
+                        <span>Calculated at checkout</span>
+
+                    </div>
+
+                    <hr>
+
+
+                    <!-- TOTAL -->
+                    <div class="summary-line total">
+
+                        <span>Total</span>
+
+                        <strong id="bagTotal">₹0</strong>
+
+                    </div>
+
+
+                    <!-- CHECKOUT BUTTON -->
+                    <a
+                        href="checkout.html"
+                        class="btn-aurea w-100 justify-content-between mt-3"
+                    >
+
+                        PROCEED TO CHECKOUT
+
+                        <span>↗</span>
+
+                    </a>
+
+
+                    <!-- TAX INFORMATION -->
+                    <small>
+                        Taxes included where applicable.
+                    </small>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <div id="siteFooter"></div>
+
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- CUSTOM JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
